@@ -18,8 +18,8 @@
 
 #import "GTMWindowSheetController.h"
 
-@interface GTMWSCSheetInfo : NSObject {
- @public
+CT_INTERNAL @interface GTMWSCSheetInfo : NSObject {
+ @package
   __weak NSWindow* overlayWindow_;
 
   // delegate data
@@ -81,7 +81,8 @@ willPositionSheet:(NSWindow*)sheet
        usingRect:(NSRect)defaultSheetRect;
 @end
 
-@interface GTMWSCOverlayWindow : NSWindow {
+CT_INTERNAL @interface GTMWSCOverlayWindow : NSWindow {
+@private
   GTMWindowSheetController* sheetController_;
 }
 

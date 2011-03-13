@@ -22,7 +22,7 @@
 #if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5
 
 // A simple text field cell that truncates the right hand edge using a gradient
-@interface GTMFadeTruncatingTextFieldCell : NSTextFieldCell
+CT_INTERNAL @interface GTMFadeTruncatingTextFieldCell : NSTextFieldCell
 @end
 
 #endif

@@ -7,8 +7,8 @@
 #import "scoped_nsobject.h"
 
 // A button that changes when you hover over it and click it.
-@interface HoverButton : NSButton {
- @protected
+CT_INTERNAL @interface HoverButton : NSButton {
+ @package
   // Enumeration of the hover states that the close button can be in at any one
   // time. The button cannot be in more than one hover state at a time.
   enum HoverState {

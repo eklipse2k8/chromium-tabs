@@ -6,6 +6,15 @@
   #import <Foundation/Foundation.h>
 #endif
 
+// Lets mark internal classes as such
+#ifndef CT_INTERNAL
+  #define CT_INTERNAL __attribute__ ((visibility("hidden")))
+#endif
+
+#ifndef CT_EXPORT
+  #define CT_EXPORT __attribute__ ((visibility("default")))
+#endif
+
 // Filename macro
 #ifndef __FILENAME__
   #define __FILENAME__ ((strrchr(__FILE__, '/') ?: __FILE__ - 1) + 1)

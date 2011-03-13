@@ -126,6 +126,7 @@ private:
 // falsely pick up clicks during rapid tab closure, so we have to account for
 // that.
 @interface TabStripControllerDragBlockingView : NSView {
+@private
   CTTabStripController* controller_;  // weak; owns us
 }
 
@@ -298,8 +299,8 @@ private:
     newTabButton_ = [view newTabButton];
     [self addSubviewToPermanentList:newTabButton_];
     [newTabButton_ setTarget:nil];
-    [newTabButton_ setAction:@selector(commandDispatch:)];
-    [newTabButton_ setTag:CTBrowserCommandNewTab];
+    [newTabButton_ setAction:@selector(newDocument:)];
+    //[newTabButton_ setTag:CTBrowserCommandNewTab];
     // Set the images from code because Cocoa fails to find them in our sub
     // bundle during tests.
     [newTabButton_ setImage:kNewTabImage];

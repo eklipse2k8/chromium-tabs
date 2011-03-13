@@ -54,7 +54,7 @@
 @end
 
 
-@interface GTMWindowSheetController : NSObject {
+CT_INTERNAL @interface GTMWindowSheetController : NSObject {
  @private
   __weak NSWindow* window_;
   __weak NSView* activeView_;

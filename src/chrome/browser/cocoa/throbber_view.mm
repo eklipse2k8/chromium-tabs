@@ -28,6 +28,7 @@ static const float kAnimationIntervalSeconds = 0.03;  // 30ms, same as windows
 
 @interface ThrobberFilmstripDelegate : NSObject
                                        <ThrobberDataDelegate> {
+@private
   scoped_nsobject<NSImage> image_;
   unsigned int numFrames_;  // Number of frames in this animation.
   unsigned int animationFrame_;  // Current frame of the animation,
@@ -82,6 +83,7 @@ static const float kAnimationIntervalSeconds = 0.03;  // 30ms, same as windows
 
 @interface ThrobberToastDelegate : NSObject
                                    <ThrobberDataDelegate> {
+@private
   scoped_nsobject<NSImage> image1_;
   scoped_nsobject<NSImage> image2_;
   NSSize image1Size_;

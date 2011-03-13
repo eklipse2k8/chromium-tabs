@@ -15,6 +15,7 @@
 @end
 
 @interface CTBrowserWindowController : CTTabWindowController {
+    @package
   CTBrowser* browser_; // we own the browser
   CTTabStripController *tabStripController_;
   CTTabStripModelObserverBridge *tabStripObserver_;

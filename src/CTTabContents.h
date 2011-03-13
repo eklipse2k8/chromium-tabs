@@ -34,6 +34,7 @@ extern const NSString* CTTabContentsDidCloseNotification;
 //
 
 @interface CTTabContents : NSDocument {
+    @private
   BOOL isApp_;
   BOOL isLoading_;
   BOOL isWaitingForResponse_;

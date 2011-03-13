@@ -17,7 +17,7 @@
 //  An object that allows different types of ordering and reselection to be
 //  heuristics plugged into a TabStripModel.
 //
-class CTTabStripModelOrderController : public CTTabStripModelObserver {
+class CT_INTERNAL CTTabStripModelOrderController : public CTTabStripModelObserver {
  public:
   explicit CTTabStripModelOrderController(CTTabStripModel* tabstrip);
   virtual ~CTTabStripModelOrderController();

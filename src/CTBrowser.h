@@ -19,8 +19,8 @@ class CTTabStripModel;
 // A CTBrowser instance has one TabStripModel.
 
 @interface CTBrowser : NSObject <CTTabStripModelDelegate, NSFastEnumeration> {
+    @package
   CTTabStripModel *tabStripModel_;
-@public
   // Important: Don't ever change this value from user code. It's public just
   // so that the internal machinery can set it at the appropriate time.
   CTBrowserWindowController *windowController_;

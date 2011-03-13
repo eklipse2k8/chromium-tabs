@@ -10,7 +10,7 @@
 // The standard close button for our Mac UI which is the "x" that changes to a
 // dark circle with the "x" when you hover over it. At this time it is used by
 // the popup blocker, download bar, info bar and tabs.
-@interface HoverCloseButton : HoverButton {
+CT_INTERNAL @interface HoverCloseButton : HoverButton {
  @private
   // Bezier path for drawing the 'x' within the button.
   scoped_nsobject<NSBezierPath> xPath_;

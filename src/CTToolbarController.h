@@ -21,8 +21,8 @@
 //    and return a CTToolbarController based on your nib.
 //
 @interface CTToolbarController : NSViewController<URLDropTargetController> {
+@private
   __weak CTBrowser* browser_;  // weak, one per window
- @private
   // Tracking area for mouse enter/exit/moved in the toolbar.
   scoped_nsobject<NSTrackingArea> trackingArea_;
 }

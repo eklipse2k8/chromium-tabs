@@ -17,7 +17,7 @@
 // notifications from |model| and passes messages to |controller| via the
 // informal protocol below. The owner of this object is responsible for deleting
 // it (and thus unhooking notifications) before |controller| is destroyed.
-class CTTabStripModelObserverBridge : public CTTabStripModelObserver {
+class CT_INTERNAL CTTabStripModelObserverBridge : public CTTabStripModelObserver {
  public:
   CTTabStripModelObserverBridge(CTTabStripModel* model, id controller);
   virtual ~CTTabStripModelObserverBridge();

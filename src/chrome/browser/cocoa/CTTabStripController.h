@@ -32,11 +32,11 @@ class CTTabStripModel;
 //
 // For a full description of the design, see
 // http://www.chromium.org/developers/design-documents/tab-strip-mac
-@interface CTTabStripController :
+CT_INTERNAL @interface CTTabStripController :
   NSObject<CTTabControllerTarget,
            URLDropTargetController,
            GTMWindowSheetControllerDelegate> {
- @protected
+ @package
   // YES if tabs are to be laid out vertically instead of horizontally.
   BOOL verticalLayout_;
 

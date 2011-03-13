@@ -10,6 +10,7 @@
 
 #import "CTPageTransition.h"
 #import "observer_list.h"
+#import "common.h"
 
 #import "CTTabStripModelDelegate.h"
 
@@ -62,7 +63,7 @@ enum CTTabReplaceType {
 //  Add/RemoveObserver methods.
 //
 ////////////////////////////////////////////////////////////////////////////////
-class CTTabStripModelObserver {
+class CT_INTERNAL CTTabStripModelObserver {
  public:
   // A new CTTabContents was inserted into the TabStripModel at the specified
   // index. |foreground| is whether or not it was opened in the foreground
@@ -201,7 +202,7 @@ class CTTabStripModelObserver {
 //  its bookkeeping when such events happen.
 //
 ////////////////////////////////////////////////////////////////////////////////
-class CTTabStripModel /*: public NotificationObserver*/ {
+class CT_INTERNAL CTTabStripModel /*: public NotificationObserver*/ {
  public:
   // Policy for how new tabs are inserted.
   enum InsertionPolicy {
